@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+   margin: 40px;
+   height: 150px;
+   width: 150px;
+   transition: all 0.4s ease;
+}
+.translate, .scale, .skew, .rotate, .rotateandscale{
+    padding-left:10px;
+    padding-right: 10px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+.translate:hover~.box{
+    transform: translate(100px,100px);
+}
+.scale:hover~.box{
+    transform: scale(2,2);
+}
+.skew:hover~.box{
+    transform:skew(15deg,15deg);
+}
+.rotate:hover~.box{
+    transform: rotate(360deg);
+}
+.rotateandscale:hover~.box{
+    transform:rotate(360deg)scale(1,1.5);
+}
